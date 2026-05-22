@@ -1,0 +1,96 @@
+  <!-- ============================================================
+       HONORS ARTIFACT 2 RUBRIC CHECKLIST
+       Required: title, screenshot or link, what the program does,
+       at least 4 coding concepts (one more than CP), one part you
+       understand well, one bug you fixed, what you would improve,
+       AND a deeper explanation of how one section of the code works.
+       ============================================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifact 2: Programming - [Colton Leaman]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Artifact 2: Programming or Interactive Project</h1>
+    <p>Interactive Soccer Card</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="artifact1.html">Web Design</a>
+    <a href="artifact2.html">Programming</a>
+    <a href="artifact3.html">AI and Data</a>
+    <a href="artifact4.html">Cybersecurity</a>
+    <a href="artifact5.html">Honors Choice</a>
+    <a href="impact.html">Impact</a>
+    <a href="reflection.html">Reflection</a>
+  </nav>
+
+  <main>
+    <a href="index.html" class="back-link">&larr; Back to homepage</a>
+
+
+    <section class="card">
+      <h2>What This Program Does:</h2>
+      <p>This program shows a kid playing soccer and scoring a goal. There is also a little joke that goes along with it too once you score the goal. It is pretty simple. </p>
+    </section>
+
+    <section class="card">
+      <h2>Screenshot or Visual:</h2>
+      <img src="https://studio.code.org/v3/assets/0d1edfd7-0dad-4a8e-a387-193c01ef995e/a612b2ac-41eb-4f2d-879c-e97251d55478.png" alt="My program running, with the start screen visible"> 
+    </section>
+
+    <section class="card">
+      <h2>Project Link:</h2>
+      <a href="https://studio.code.org/projects/gamelab/5f0ec0b1-5cc4-4b14-b3c2-5b88966f0918" target="_blank">View Programming Project</a>
+    </section>
+
+    <section class="card">
+      <h2>Coding Concepts I Used:</h2>
+      <ul>
+        <li><strong>Concept 1:</strong> If/Else - This changes direction of my character and his movement all around, the key up and down codes interact with these as well. </li>
+        <li><strong>Concept 2:</strong> Variables - The variables in my code control my character's appearance, as well as his location. Also helps with the background, and the soccer ball and goal.</li>
+        <li><strong>Concept 3:</strong> The Red Blocks - All of the red blocks in my code are very important, such as set animation, velocityX, and rotation. All help with the soccer ball and my character.</li>
+        <li><strong>Concept 4:</strong> Functions - The only function in my code is the draw function, which is the most important. </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>One Part of the Code I Understand Well:</h2>
+      <p>The if/else and key down/up functions are really easy to understand. Because IF I press the down key then he will move a certain way, and if I hit the up key (which is the ELSE) he will go the other way.</p>
+    </section>
+
+    <section class="card">
+      <h2>Deeper Technical Explanation: How One Section Works</h2>
+      <p><strong>The code section:</strong> // Kid movement, if (keyDown("right")) {kid2.setAnimation("kid2walk");
+    kid2.x = kid2.x + 4; 
+    kid2.mirrorX(1); 
+  } else if (keyDown("left")) {
+    //The keyDown "right" and "left" control the direction and where he is facing. 
+    kid2.setAnimation("kid2walk");
+    kid2.x = kid2.x - 15;
+    //(Mirror changes the direction of the kid, at the start he would only face one way. 
+    kid2.mirrorX(-1); 
+  } else {
+    kid2.setAnimation("kid2");</p>
+      <p><strong>How it works:</strong> So, all off this code controls the movement and location of the kid who is the main character. I also used "mirror" which I though was a very good addition to the card.</p>
+    </section>
+
+    <section class="card">
+      <h2>One Bug or Challenge I Fixed:</h2>
+      <p>A problem I remember having was how the soccer net would keep moving when it is supposed to be stationary. It would randomly flip, I looked at my code and realized I put velocity and rotation functions for both the soccer ball and net.</p>
+    </section>
+
+    <section class="card">
+      <h2>One Thing I Would Improve:</h2>
+      <p>If I had more time, I would add more detail to it, I think it looks ok, but it could look better and have a cleaner appearance.</p>
+    </section>
+
+  </main>
+</body>
+</html>

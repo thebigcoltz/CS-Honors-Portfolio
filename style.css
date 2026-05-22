@@ -1,0 +1,192 @@
+/* ============================================================
+   HONORS Final Portfolio 
+   ============================================================ */
+
+/* alignment of the heading, so it looks neat. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* body text */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F7FA;
+  color: #11141B;
+  line-height: 1.6;
+}
+
+/* Header(s) (color and text) */
+header {
+  background-color: #11141B;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #E6F0FA;
+  font-size: 16px;
+}
+
+/* Navigation Bar (hover=sticky nav) */
+nav {
+  background-color: #005A9C;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #11141B;
+}
+
+/* Main Layout  */
+main {
+  width: 90%;
+  max-width: 1300px; /* CHANGED FROM 900px: Allows the content to expand much wider on bigger screens */
+  margin: 30px auto; /* Centers the entire page  */
+}
+
+.back-link {
+  display: inline-block;
+  color: #005A9C;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Headings (again) */
+h2 {
+  color: #11141B;
+  border-left: 5px solid #005A9C;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #005A9C;
+  margin: 25px 0 10px 0;
+}
+
+/* The Grid  */
+.artifact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;            /* spacing between all of the cards */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  display: block;
+  background-color: white;
+  border: 1px solid #D0D8E0;
+  border-radius: 6px;
+  padding: 20px;
+  text-decoration: none;
+  color: #11141B;
+  width: 100%;          /* Full width  */
+}
+
+/* Hover Effect (Ford Cards)*/
+a.card:hover {
+  border-color: #005A9C;
+  background-color: #F9FBFC;
+}
+
+/* Highlighted the last artifact */
+#artifact5 {
+  background-color: #E6F0FA;
+}
+
+/* Honors Note? */
+.honors-note, .hint {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.honors-note {
+  background-color: #E6F0FA;
+  border-left: 4px solid #005A9C;
+}
+
+.hint {
+  background-color: #FFF9E6;
+  border-left: 4px solid #FDB927;
+  color: #5C4300;
+}
+
+/* Images + Placeholders */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #D0D8E0;
+  border-radius: 4px;
+  margin: 15px 0;
+  display: block;
+}
+
+.placeholder {
+  background-color: #E6F0FA;
+  border: 2px dashed #005A9C;
+  padding: 25px;
+  text-align: center;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #D0D8E0;
+}
+
+th {
+  background-color: #11141B;
+  color: white;
+  border-bottom: 3px solid #005A9C;
+}
+/* Table Hover */
+tr:hover td {
+  background-color: #E6F0FA;
+}
+
+/* This makes the grid fit on the page */
+@media (min-width: 650px) {
+  .card {
+    /* Math I used was: 50% width minus half of the 20px gap keeps everything perfectly in line, this is so it stays on the screen */
+    width: calc(50% - 10px); 
+  }
+  
+  #artifact5 {
+    width: 100%; /* Keeps the final artifact across the bottom neatly and nicely */
+  }
+}
