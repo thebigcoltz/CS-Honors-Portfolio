@@ -56,8 +56,8 @@ nav a:hover {
 
 /* Main Layout  */
 main {
-  width: 90%;
-  max-width: 1300px; /* CHANGED FROM 900px: Allows the content to expand much wider on bigger screens */
+  width: 95%; /* Increased slightly from 90% to utilize even more screen real estate */
+  max-width: 1400px; /* Allows the content to expand very wide on large monitors */
   margin: 30px auto; /* Centers the entire page  */
 }
 
@@ -89,8 +89,8 @@ h3 {
 /* The Grid  */
 .artifact-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;            /* spacing between all of the cards */
+  flex-direction: column; /* Forces all items to stack vertically in a single column */
+  gap: 25px;              /* Slightly increased spacing for large, full-width sections */
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -101,13 +101,13 @@ h3 {
   background-color: white;
   border: 1px solid #D0D8E0;
   border-radius: 6px;
-  padding: 20px;
+  padding: 30px;          /* Increased padding so text doesn't look cramped in a wide layout */
   text-decoration: none;
   color: #11141B;
-  width: 100%;          /* Full width  */
+  width: 100%;            /* Spans 100% of the main container width */
 }
 
-/* Hover Effect (Ford Cards)*/
+/* Hover Effect (For Cards)*/
 a.card:hover {
   border-color: #005A9C;
   background-color: #F9FBFC;
@@ -179,14 +179,13 @@ tr:hover td {
   background-color: #E6F0FA;
 }
 
-/* This makes the grid fit on the page */
+/* Responsive adjustments */
 @media (min-width: 650px) {
+  /* Removed the 50% width calculation. 
+    Every card (Artifacts 1-5, impacts, reflections) now sits beautifully 
+    at 100% width, filling the entire horizontal space of the page.
+  */
   .card {
-    /* Math I used was: 50% width minus half of the 20px gap keeps everything perfectly in line, this is so it stays on the screen */
-    width: calc(50% - 10px); 
-  }
-  
-  #artifact5 {
-    width: 100%; /* Keeps the final artifact across the bottom neatly and nicely */
+    width: 100%; 
   }
 }
